@@ -1,0 +1,52 @@
+//HTML部分
+<h1>这也许是你至今 <span>最难</span> 的游戏</h1>
+
+<p>如果你愿意开启这个游戏，那么请点击下面的按钮：</p>
+<button id="btn">Link,Start</button>
+<img src="http://ife.baidu.com/2016/static/img/logo_c9785ff2.png" id="img">
+
+//CSS部分
+h1 {
+  /* 设置了字的大小，px是单位，你可以尝试改成其它大小 */
+  font-size: 30px;
+  width: 450px;
+  height: 70px;
+  border: 3px solid red;
+  margin: 0 auto;
+   margin-bottom: 100px;
+  text-align: center;
+  line-height: 70px;
+}
+h1 span {
+  color: red;
+  border-bottom: 2px solid red;
+  font-size: 40px;
+}
+p{
+  /* 设置了字的颜色，你可以尝试改成yellow */
+  color: red;
+  text-align: center;
+}
+#img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+#btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+#btn:hover {
+  background-color: red;
+  border: 1px solid red;
+}
+
+// JS部分
+document.getElementById("btn").onclick = function () {
+  // 点按钮后弹出一个文字，你可以尝试改变文字内容
+  alert("那么，现在让我们开启前端学习之旅吧！");
+}
