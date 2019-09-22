@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>练习1</title>
+    <link rel="stylesheet" id="link1" href="css/style_3.css">
+</head>
+<body>
+    <div class="box-left"><h1>简历</h1></div>
+        <div class="box-right clearfix">
+            <div class="div1 clearfix">
+                <div class="infos clearfix div-box">
+                    <h2>基本信息</h2>
+                </div  >
+                    <div class="infos2 clearfix">
+                        <span class="info">姓名</span>
+                        <span class="info2">刘小君</span>
+                        <span class="info">性别</span>
+                        <span class="info2">女</span>
+                        <span class="info">应聘职位</span>
+                        <span class="info2">Web前端工程师</span>
+                    </div>
+            </div>
+            <div class="div1">
+                <div class="call div-box">
+                    <h2>联系方式</h2>
+                </div>
+                    <div  class="infos2">
+                        <span class="info">电话</span>
+                        <span class="info2">18312365478</span>
+                        <span class="info"> Email</span>
+                        <a href=""  class="info2">xiaojun@baidu.com</a>
+                        <span class="info">个人主页</span>
+                        <a href="" class="info2">Github</a>
+                    </div>
+            </div>
+            <div class="div1">
+                <div class="able div-box">
+                    <h2>能力描述</h2>
+                </div>
+                <div class="infos2" >
+                    <div class="box-top">
+                        <span class="title">技术能力<br/></span>
+                        <span class="title2">熟练掌握HTML,CSS,JavaScript<br/></span>
+                    </div>
+                    <div>
+                        <span class="title">综合能力<br/></span>
+                        <span class="title2">良好的沟通，主动积极，努力勤奋</span>
+                    </div>
+                </div>
+            </div>
+            <div class="div1">
+                <div>
+                    <h2 class="teach div-box">教育经历</h2>
+                </div>
+                <div  class="infos2">
+                    <div  class="box-top">
+                        <span class="title">本科<br/></span>
+                        <span class="title2">百度前端技术学院小微学院<br/></span>
+                    </div>
+                    <div>
+                        <span class="title">研究生<br/></span>
+                        <span class="title2">百度前端技术学院大斌学院</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="div1">
+                    <div class="item div-box">
+                        <h2>项目经历</h2>
+                    </div>
+                    <div class="infos2">
+                        <div class="box-top">
+                            <span class="title">小度小度<br/></span>
+                            <span class="title2">作为前端工程师角色参与了ABD组件的开发<br/></span>
+                        </div>
+                        <div>
+                            <span class="title">SAN Doc<br/></span>
+                            <span class="title2">作为文档工程师参与了SAN Doc编写</span>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+        <div class="boxbtn">
+                <input type="button" value="更改外观1" class="btn" onclick="modify()"/>
+                <input type="button" value="更改外观2" class="btn1" onclick="modify1()"/>
+                <input type="button" value="更改外观3" class="btn2" onclick="modify2()"/>
+
+        </div>
+        
+            </select>
+        <script>
+            function modify(){
+                var click = document.getElementById("link1").href ='css/style_1.css'
+            }
+            function modify1(){
+                var click = document.getElementById("link1").href ='css/style_2.css'
+            }
+            function modify2(){
+                var click = document.getElementById("link1").href ='css/style_3.css'
+            }
+            // var click = document.getElementById("link1")
+            // function modify(){
+            //     if(link1.href ='css/style_1.css'){
+            //         click.setAttribute("href","css/style_2.css");
+            //     }
+            //     else{
+            //         click.setAttribute("href","css/style_3.css");
+            //     }
+                
+            // }
+        </script>
+</body>
+</html>
