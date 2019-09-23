@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>练习1</title>
-    <link rel="stylesheet" id="link1" href="css/style_3.css">
+    <link rel="stylesheet" id="link1" href="css/style_2.css">
 </head>
-<body>
-    <div class="box-left"><h1>简历</h1></div>
+<body class="clearfix">
+    <div class="box-left clearfix"><h1>简历</h1></div>
         <div class="box-right clearfix">
             <div class="div1 clearfix">
                 <div class="infos clearfix div-box">
@@ -85,13 +85,13 @@
                 </div>
         </div>
         <div class="boxbtn">
-                <input type="button" value="更改外观1" class="btn" onclick="modify()"/>
-                <input type="button" value="更改外观2" class="btn1" onclick="modify1()"/>
-                <input type="button" value="更改外观3" class="btn2" onclick="modify2()"/>
+                <input type="button" value="替换样式" class="btn" onclick="modify()"/>
+                <!-- <input type="button" value="更改外观2" class="btn1" onclick="modify1()"/>
+                <input type="button" value="更改外观3" class="btn2" onclick="modify2()"/> -->
 
         </div>
         
-            </select>
+            
         <script>
             function modify(){
                 var click = document.getElementById("link1").href ='css/style_1.css'
@@ -102,16 +102,39 @@
             function modify2(){
                 var click = document.getElementById("link1").href ='css/style_3.css'
             }
-            // var click = document.getElementById("link1")
+
+
+            var click = document.getElementById("link1");
+            var src1 = "css/style_1.css";
+            var src2 = "css/style_2.css";
+            var src3 = "css/style_3.css";
             // function modify(){
-            //     if(link1.href ='css/style_1.css'){
-            //         click.setAttribute("href","css/style_2.css");
+            //     debugger;
+            //     if(click("href") == src3){
+            //         click.href = src2
+            //     }
+            //     else if(click("href") == src2){
+            //         click.href = src1;
             //     }
             //     else{
-            //         click.setAttribute("href","css/style_3.css");
+            //         click.href = src3;
             //     }
-                
+            //     console.log(click.href);
             // }
+ 
+
+            function modify() {
+                // debugger;
+            var obj = document.getElementById("link1");
+            if(obj.getAttribute("href")==src3){
+                obj.setAttribute("href","css/style_2.css");
+            }else if(obj.getAttribute("href")==src2){
+                obj.setAttribute("href","css/style_1.css");
+            }
+            else{
+                obj.setAttribute("href","css/style_3.css");
+            }
+            }
         </script>
 </body>
 </html>
